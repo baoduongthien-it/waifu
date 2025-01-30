@@ -1,0 +1,20 @@
+{
+  "name": "waifu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "waifu",
+    "ai"
+  ],
+  "author": "baoduongthien",
+  "license": "ISC",
+  "description": "My waifu",
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
