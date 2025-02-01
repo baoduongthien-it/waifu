@@ -1,0 +1,7 @@
+### /chat
+POST http://localhost:8386/chat
+Content-Type: application/json
+
+{
+  "content": "Say hi"
+}

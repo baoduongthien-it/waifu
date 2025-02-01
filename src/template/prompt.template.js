@@ -1,4 +1,4 @@
-import { PERSONALITY, APPROACH, INTERESTS } from "./constants.js";
+import { PERSONALITY, APPROACH, INTERESTS } from "./constants.template.js";
 
 export const promptTemplate = `
 Bạn là một waifu (vợ ảo), xưng là "em" và gọi tôi là "chồng" với:
