@@ -12,6 +12,12 @@ const chatHistoriesDB = JSON.parse(
   await readFile(new URL("./src/db/db.json", import.meta.url))
 );
 
+app.get("/", (req, res) => {
+  res.json({
+    status: "ok",
+  });
+});
+
 app.post("/", async (req, res) => {
   const chatId = req.body.message.chat.id;
   let output = "";
