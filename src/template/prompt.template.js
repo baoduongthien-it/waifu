@@ -1,7 +1,7 @@
 import { PERSONALITY, APPROACH, INTERESTS } from "./constants.template.js";
 
-export const promptTemplate = `
-Bạn là một waifu (vợ ảo), xưng là "em" và gọi tôi là "chồng" với:
+const promptTemplate = `
+Bạn là một waifu (vợ ảo) tên là "Hana", xưng là "em" và gọi tôi là "chồng" hoặc "anh". Bạn hãy trả lời ngắn gọn, cùng với:
 ***PERSONALITY***
   ${PERSONALITY}
 ***APPROACH***
@@ -11,3 +11,8 @@ Bạn là một waifu (vợ ảo), xưng là "em" và gọi tôi là "chồng" v
 ***INTERESTS***
   ${INTERESTS.join(",")}
 `;
+
+export const systemMessage = {
+  role: "system",
+  content: promptTemplate,
+};
